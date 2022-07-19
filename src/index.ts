@@ -128,7 +128,6 @@ export function asBlob(
   options: Partial<DocumentMargins>,
   format?: "blob" | "buffer"
 ) {
-  console.log({ html });
   const zip = new JSZip();
   zip.file("[Content_Types].xml", content_types);
   zip.folder("_rels")!.file(".rels", rels);
