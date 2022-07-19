@@ -10,7 +10,7 @@ Content-Type: text/html;
 Content-Transfer-Encoding: quoted-printable
 Content-Location: file:///C:/fake/document.html
 
-<%= htmlSource %>
+<%- htmlSource %>
 
 <%= contentParts %>
 

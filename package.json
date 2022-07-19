@@ -1,52 +1,44 @@
 {
   "name": "html-docx-js",
-  "version": "0.3.1",
+  "version": "0.1.0",
   "description": "Converts HTML documents to DOCX in the browser",
-  "main": "build/api.js",
+  "main": "dist/html-docx.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/evidenceprime/html-docx-js.git"
+    "url": "git://github.com/connordeckers/html-docx-js.git"
   },
   "scripts": {
     "test": "gulp test-node",
     "prepublish": "gulp clean; gulp build-node"
   },
-  "browserify": {
-    "transform": [
-      "coffeeify",
-      "brfs"
-    ]
-  },
-  "author": "Artur Nowak <artur.nowak@evidenceprime.com>",
-  "contributors": [{
-    "name": "Ievgen Martynov",
-    "email": "ievgen.martynov@gmail.com"
-  }],
+  "author": "Connor Deckers <connor.deckers@utas.edu.au>",
   "license": "MIT",
   "devDependencies": {
-    "brfs": "^1.1.2",
-    "browserify": "^4.2.0",
-    "chai": "^1.9.1",
-    "coffeeify": "^0.6.0",
-    "del": "^1.2.0",
-    "gulp": "^3.8.5",
-    "gulp-coffee": "^2.3.1",
-    "gulp-lodash-template": "^0.1.0",
-    "gulp-mocha": "^0.4.1",
-    "gulp-mocha-phantomjs": "^0.3.0",
-    "gulp-notify": "^1.4.0",
-    "gulp-util": "^2.2.19",
-    "jstify": "^0.9.0",
-    "mocha": "^1.20.1",
-    "pretty-hrtime": "^0.2.1",
-    "sinon": "^1.10.2",
-    "sinon-chai": "^2.5.0",
-    "vinyl-source-stream": "^0.1.1",
-    "watchify": "^0.10.2"
+    "@rollup/plugin-commonjs": "^21.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^3.1.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@rollup/plugin-url": "^6.1.0",
+    "@rollup/pluginutils": "^4.2.1",
+    "@types/ejs": "^3.1.1",
+    "@types/lodash": "^4.14.182",
+    "brfs": "^2.0.2",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "rollup": "^2.76.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-inject-process-env": "^1.3.1",
+    "rollup-plugin-summary": "~1.3.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-pluginutils": "^2.8.2",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
-    "jszip": "^2.3.0",
-    "lodash.escape": "^3.0.0",
-    "lodash.merge": "^3.2.0"
+    "@rollup/plugin-json": "^4.1.0",
+    "ejs": "^3.1.8",
+    "jszip": "^3.10.0",
+    "lodash": "^4.17.21",
+    "tslib": "^2.4.0"
   }
 }
